@@ -1,0 +1,28 @@
+{
+  "name": "erp-solutions-full",
+  "version": "0.1.0",
+  "private": true,
+  "main": "electron-main/main.js",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
+    "build": "vite build",
+    "start": "electron .",
+    "package": "electron-builder"
+  },
+  "dependencies": {
+    "better-sqlite3": "*",
+    "bcryptjs": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-router-dom": "*",
+    "pdfkit": "*"
+  },
+  "devDependencies": {
+    "electron": "*",
+    "electron-builder": "*",
+    "vite": "*",
+    "typescript": "*",
+    "concurrently": "*",
+    "wait-on": "*"
+  }
+}
